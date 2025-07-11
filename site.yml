@@ -1,0 +1,19 @@
+---
+- name: Subscribe
+  hosts: all
+  become: true
+  become_user: root
+  become_method: ansible.builtin.sudo
+
+  vars_prompt:
+    - name: subscription_timestamp_override
+      prompt: subscription timestamp. Or press Enter to accept default (current time, UTC)
+      private: false
+      default: "{{ now(utc=true,fmt='%Y%m%d_%Hh%Mm%Ss') }}"
+
+  tasks:
+    - name: Ansible Role Subscribe
+      ansible.builtin.include_role:
+        name: ansible-role-subscribe
+      vars:
+        subscription_timestamp: "{{ subscription_timestamp_override }}"

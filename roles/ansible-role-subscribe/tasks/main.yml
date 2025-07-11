@@ -1,0 +1,5 @@
+---
+- name: Create subscription file
+  file:
+    path: "/etc/{{ subscription_timestamp }}_subscribed.txt"
+    state: touch
