@@ -1,0 +1,13 @@
+---
+- name: Subscribe
+  hosts: all
+  become: true
+  become_user: root
+  become_method: ansible.builtin.sudo
+
+  tasks:
+    - name: Ansible Role Subscribe
+      ansible.builtin.include_role:
+        name: ansible-role-subscribe
+      vars:
+        subscription_timestamp: "{{ lookup('cypher','secret=secret/subscription_timestamp' | default('19700101_0h0m0s')) }}"
