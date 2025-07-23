@@ -1,0 +1,3 @@
+[submodule "playbooks/subscribe_via_morpheus/roles/ansible-role-subscribe"]
+	path = playbooks/subscribe_via_morpheus/roles/ansible-role-subscribe
+	url = git@github.com:slothkong/ansible-role-subscribe.git
