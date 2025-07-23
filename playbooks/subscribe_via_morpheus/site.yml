@@ -10,4 +10,4 @@
       ansible.builtin.include_role:
         name: ansible_role_subscribe
       vars:
-        subscription_timestamp: "{{ lookup('cypher','secret=secret/subscription_timestamp' | default('19700101_0h0m0s')) }}"
+        subscription_timestamp: "{{ lookup('cypher', 'secret=secret/subscription_timestamp' | default('19700101_0h0m0s')) }}"
