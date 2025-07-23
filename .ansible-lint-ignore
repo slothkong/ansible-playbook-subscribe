@@ -1,0 +1,2 @@
+playbooks/subscribe_via_morpheus/site.yml var-naming[no-role-prefix]
+playbooks/subscribe/site.yml var-naming[no-role-prefix]
