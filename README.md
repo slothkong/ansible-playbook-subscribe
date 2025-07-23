@@ -2,9 +2,12 @@
 
 ## Usage
 
-1. Fetch the required Ansible Roles:
+1. Define the path to the desired playbook subdirectory:
 ```bash
-PLAYBOOK_SUBDIR=playbooks/subscribe
+export PLAYBOOK_SUBDIR=playbooks/subscribe # OR playbooks/subscribe_via_morpheus
+```
+2. Download any dependencies:
+```bash
 cd $PLAYBOOK_SUBDIR
 ansible-galaxy role install -r requirements.yml --roles-path ./roles
 ```
