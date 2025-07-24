@@ -11,4 +11,3 @@
         path: "/etc/{{ now(utc=true,fmt='%Y%m%d_%Hh%Mm%Ss') }}_unsubscribed.txt"
         state: touch
         mode: '0644'
-
