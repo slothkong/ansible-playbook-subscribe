@@ -1,5 +1,0 @@
----
-roles:
-  - name: ansible-role-subscribe
-    src: https://github.com/slothkong/ansible-role-subscribe.git
-    version: 1.0.0
