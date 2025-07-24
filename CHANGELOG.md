@@ -3,6 +3,13 @@
 All notable changes to this project are documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.1](https://github.com/slothkong/ansible-playbook-subscribe/compare/1.2.0...1.2.1) (2025-07-24)
+
+
+### Bug Fixes
+
+* Bump version of Ansible Role to 1.0.1 ([e1d4d7c](https://github.com/slothkong/ansible-playbook-subscribe/commit/e1d4d7c58ffabb2fc6a2e29444f1bcb0acf9b040))
+
 # [1.2.0](https://github.com/slothkong/ansible-playbook-subscribe/compare/1.1.0...1.2.0) (2025-07-24)
 
 
