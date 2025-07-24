@@ -14,6 +14,6 @@
   tasks:
     - name: Ansible Role Subscribe
       ansible.builtin.include_role:
-        name: ansible-role-subscribe
+        name: ansible-role-subscribe-1.0.1
       vars:
         subscription_timestamp: "{{ subscription_timestamp_override }}"

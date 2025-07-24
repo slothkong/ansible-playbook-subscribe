@@ -23,12 +23,17 @@
             }
         ],
         [
-            "@semantic-release/git", 
+            "@semantic-release/exec",
             {
-                "assets": ["CHANGELOG.md"],
-                "message": "chore: ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+                "successCmd": "echo 'VERSION=${nextRelease.version}' >> $GITHUB_ENV"
             }
         ],
-        "@semantic-release/github"
+        [
+            "@semantic-release/git",
+            {
+                "assets": ["CHANGELOG.md"],
+                "message": "chore: Release version ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+            }
+        ]
   ]
 }

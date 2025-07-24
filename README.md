@@ -1,14 +1,9 @@
-# Ansible Role Subscribe
+# Subscribe/Unsubscribe Ansible Playbooks
 
 ## Usage
 
-1. Define the path to the desired playbook subdirectory:
+1. Download any dependencies:
 ```bash
-export PLAYBOOK_SUBDIR=playbooks/subscribe # OR playbooks/subscribe_via_morpheus
-```
-2. Download any dependencies:
-```bash
-cd $PLAYBOOK_SUBDIR
 ansible-galaxy role install -r requirements.yml --roles-path ./roles
 ```
 
@@ -25,5 +20,5 @@ inventory:
 3. Run the playbook:
 
 ```bash
-ansible-playbook -i inventory.yml site.yml
+ansible-playbook -i inventory.yml <playbook filename>
 ```
