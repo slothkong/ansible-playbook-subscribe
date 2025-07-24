@@ -8,6 +8,6 @@
   tasks:
     - name: Ansible Role Subscribe
       ansible.builtin.include_role:
-        name: ansible-role-subscribe
+        name: ansible-role-subscribe-1.0.1
       vars:
         subscription_timestamp: "{{ lookup('cypher', 'secret=secret/subscription_timestamp' | default('19700101_0h0m0s')) }}"
