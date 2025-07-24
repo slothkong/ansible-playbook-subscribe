@@ -3,6 +3,13 @@
 All notable changes to this project are documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/slothkong/ansible-playbook-subscribe/compare/1.2.1...1.3.0) (2025-07-24)
+
+
+### Features
+
+* New playbook and automated release branch creation ([b8ff2ee](https://github.com/slothkong/ansible-playbook-subscribe/commit/b8ff2ee02ab56928332d9ca7f31049bcd2aaef03))
+
 ## [1.2.1](https://github.com/slothkong/ansible-playbook-subscribe/compare/1.2.0...1.2.1) (2025-07-24)
 
 
