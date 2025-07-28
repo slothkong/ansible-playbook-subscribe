@@ -8,6 +8,6 @@
   tasks:
     - name: Create end of subscription file
       ansible.builtin.file:
-        path: "/etc/{{ now(utc=true,fmt='%Y%m%d_%Hh%Mm%Ss') }}_unsubscribed.txt"
+        path: "/etc/{{ now(utc=true, fmt='%Y%m%d_%Hh%Mm%Ss') }}_unsubscribed.txt"
         state: touch
         mode: '0644'
