@@ -1,24 +1,13 @@
 # Subscribe/Unsubscribe Ansible Playbooks
 
-## Usage
+A collection of dummy Ansible Playbooks that from different Ansible runtimes.
 
-1. Download any dependencies:
-```bash
-ansible-galaxy role install -r requirements.yml --roles-path ./roles
-```
+## Requirements
+* `python`
+* `ansible`
 
-2. Create an `inventory.yml` file. For example:
-```yaml
-inventory:
-    hosts:
-        ansible_python_interpreter: /usr/bin/python3
-        ansible_ssh_private_key_file: ~/.ssh/id_rsa
-        ansible_host: 10.0.0.1
-        ansible_user: root
-```
+## Playbooks
 
-3. Run the playbook:
-
-```bash
-ansible-playbook -i inventory.yml <playbook filename>
-```
+1. [Subscribe](./playbooks/subscribe)
+2. [Subscribe via Morpheus](./playbooks/subscribe-via-morpheus)
+3. [Unsubscribe via any runtime](./playbooks/unsubscribe-via-anything)
