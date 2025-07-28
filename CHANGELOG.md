@@ -3,6 +3,13 @@
 All notable changes to this project are documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/slothkong/ansible-playbook-subscribe/compare/1.3.0...1.4.0) (2025-07-28)
+
+
+### Features
+
+* Per-playbook subdirectory with shared requirements ([8501823](https://github.com/slothkong/ansible-playbook-subscribe/commit/850182331942294a0d3add4d315916dc4b6ed1d1))
+
 # [1.3.0](https://github.com/slothkong/ansible-playbook-subscribe/compare/1.2.1...1.3.0) (2025-07-24)
 
 
